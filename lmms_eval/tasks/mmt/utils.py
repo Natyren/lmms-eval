@@ -50,7 +50,7 @@ MMT_abbrs = {
 
 
 def mmt_doc_to_visual(doc):
-    return [image.convert("RGB") for image in doc["image"]] if isinstance(doc["image"], list) else doc["image"].convert("RGB")
+    return [image.convert("RGB") for image in doc["image"]] if isinstance(doc["image"], list) else [doc["image"].convert("RGB")]
 
 
 # ============================
